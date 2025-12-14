@@ -28,34 +28,9 @@
             fontFamily: {
               sans: ['Inter', 'system-ui', 'sans-serif'],
             },
-            backgroundImage: {
-              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-              'glass': 'linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
-            },
-            keyframes: {
-              'slide-in-right': {
-                '0%': { transform: 'translateX(20px)', opacity: '0' },
-                '100%': { transform: 'translateX(0)', opacity: '1' },
-              },
-              'fade-in': {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
-              },
-              'pulse-slow': {
-                '0%, 100%': { opacity: '1' },
-                '50%': { opacity: '0.8' },
-              }
-            },
-            animation: {
-              'slide-in-right': 'slide-in-right 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-              'fade-in': 'fade-in 0.3s ease-out forwards',
-              'pulse-slow': 'pulse-slow 3s infinite ease-in-out',
-            },
             boxShadow: {
-              'glow-primary': '0 0 20px -5px color-mix(in srgb, var(--accent-primary) 30%, transparent)',
-              'glow-secondary': '0 0 20px -5px color-mix(in srgb, var(--accent-secondary) 30%, transparent)',
-              'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-              'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1)',
+              'glow-primary': '0 0 15px -3px rgba(74, 222, 128, 0.3)',
+              'card': '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.1)',
             }
           },
         },
@@ -63,61 +38,48 @@
     </script>
     <style>
       :root {
-        --background-primary: #0f1014; /* Darker, richer black/blue */
-        --background-secondary: #181a20; /* Slightly lighter card bg */
-        --background-tertiary: #20222b; /* Hover states */
-        --border-color: rgba(255, 255, 255, 0.08);
-        --text-primary: #f3f4f6;
-        --text-secondary: #9ca3af;
-        --accent-primary: #FFC700;
-        --accent-secondary: #10b981; /* More refined emerald */
-        --accent-tertiary: #3b82f6; /* Professional blue */
+        --background-primary: #0F1115;
+        --background-secondary: #1A1D23;
+        --background-tertiary: #252932;
+        --border-color: #2E333D;
+        --text-primary: #FFFFFF;
+        --text-secondary: #9CA3AF;
+        --accent-primary: #4ADE80;
+        --accent-secondary: #22c55e;
+        --accent-tertiary: #16a34a;
       }
       body {
         background-color: var(--background-primary);
         color: var(--text-primary);
         font-family: 'Inter', sans-serif;
-        background-image: 
-          radial-gradient(circle at 15% 50%, rgba(var(--accent-primary), 0.03) 0%, transparent 25%), 
-          radial-gradient(circle at 85% 30%, rgba(var(--accent-secondary), 0.03) 0%, transparent 25%);
-        background-attachment: fixed;
       }
       .glass-panel {
-        background: color-mix(in srgb, var(--background-secondary) 70%, transparent);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+        background: var(--background-secondary);
         border: 1px solid var(--border-color);
       }
       .input {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: var(--background-tertiary);
         color: var(--text-primary);
         border: 1px solid var(--border-color);
         border-radius: 0.75rem;
-        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.2s;
       }
       .input:focus {
         outline: none;
         border-color: var(--accent-primary);
-        background-color: rgba(0, 0, 0, 0.4);
-        box-shadow: 0 0 0 1px var(--accent-primary);
-      }
-      .input:hover:not(:focus) {
-        border-color: rgba(255, 255, 255, 0.15);
+        background-color: var(--background-tertiary);
       }
       /* Custom scrollbar */
       ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
+        width: 4px;
+        height: 4px;
       }
       ::-webkit-scrollbar-track {
         background: transparent;
       }
       ::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.1);
+        background: #374151;
         border-radius: 10px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.2);
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,7 +101,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-DY5s5lE5.js"></script>
+  <script type="module" crossorigin src="./assets/index-DQWDwrMn.js"></script>
 </head>
   <body>
     <div id="root"></div>
