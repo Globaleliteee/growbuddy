@@ -31,10 +31,12 @@
             },
             boxShadow: {
               'glow-primary': '0 0 15px -3px rgba(74, 222, 128, 0.3)',
+              'glow-critical': '0 0 20px -2px rgba(239, 68, 68, 0.6)',
               'card': '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.1)',
             },
             animation: {
               'pulse-alert': 'pulse-alert 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'critical-blink': 'critical-blink 0.8s ease-in-out infinite',
             },
             keyframes: {
               'pulse-alert': {
@@ -45,6 +47,18 @@
                 '50%': { 
                   'border-color': 'rgba(239, 68, 68, 1)',
                   'box-shadow': '0 0 20px rgba(239, 68, 68, 0.5)'
+                },
+              },
+              'critical-blink': {
+                '0%, 100%': { 
+                  'border-color': 'rgba(239, 68, 68, 0.4)',
+                  'box-shadow': '0 0 5px rgba(239, 68, 68, 0.1)',
+                  'background-color': 'transparent'
+                },
+                '50%': { 
+                  'border-color': 'rgba(239, 68, 68, 1)',
+                  'box-shadow': '0 0 25px rgba(239, 68, 68, 0.5)',
+                  'background-color': 'rgba(239, 68, 68, 0.08)'
                 },
               }
             }
@@ -117,7 +131,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-Dl4ieaOy.js"></script>
+  <script type="module" crossorigin src="./assets/index-CTCmKw12.js"></script>
 </head>
   <body>
     <div id="root"></div>
