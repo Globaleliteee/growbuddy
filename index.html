@@ -32,6 +32,21 @@
             boxShadow: {
               'glow-primary': '0 0 15px -3px rgba(74, 222, 128, 0.3)',
               'card': '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.1)',
+            },
+            animation: {
+              'pulse-alert': 'pulse-alert 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              'pulse-alert': {
+                '0%, 100%': { 
+                  'border-color': 'rgba(239, 68, 68, 0.3)',
+                  'box-shadow': '0 0 0px rgba(239, 68, 68, 0)'
+                },
+                '50%': { 
+                  'border-color': 'rgba(239, 68, 68, 1)',
+                  'box-shadow': '0 0 20px rgba(239, 68, 68, 0.5)'
+                },
+              }
             }
           },
         },
@@ -102,7 +117,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-BrOiE-F1.js"></script>
+  <script type="module" crossorigin src="./assets/index-Dl4ieaOy.js"></script>
 </head>
   <body>
     <div id="root"></div>
